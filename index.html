@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basav Sharma · Tools I've Built</title>
+<meta name="description" content="Finance and operations tools built and implemented by Basav Sharma. Sample data, open live in your browser.">
+<meta property="og:title" content="Basav Sharma · Tools I've Built">
+<meta property="og:image" content="https://basav16.github.io/portfolio/img/basav.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{--ivory:#f8f0e1;--card:#fffbf2;--line:#e4d6bb;--navy:#0f1f3d;--navy-2:#2b3a57;--mute:#6b7389;--gold:#b8975a;--royal:#2a52be;--royal-soft:#e3e9fa;--li:#0a66c2;
+--serif:"Fraunces",Georgia,serif;--sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"JetBrains Mono",ui-monospace,Consolas,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ivory);color:var(--navy);font:16px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header{padding:64px 0 40px;text-align:center}
+.photo{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:50% 25%;margin:0 auto 20px;box-shadow:0 0 0 4px var(--card),0 0 0 6px var(--gold)}
+h1{font:800 clamp(40px,6vw,64px)/1 var(--serif);letter-spacing:-.035em;margin:0 0 18px}
+h1 span{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 22px;border-radius:999px;font:600 15px/1 var(--sans);text-decoration:none;background:var(--li);color:#fff;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px);background:#084e96}
+.btn svg{width:17px;height:17px}
+.label{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--royal)}
+.intro{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1.5px solid var(--navy);padding-top:22px;margin-bottom:22px}
+.intro h2{font:800 clamp(28px,3.4vw,40px)/1 var(--serif);letter-spacing:-.025em;margin:8px 0 0}
+.intro p{margin:0;color:var(--mute);font-size:14px;max-width:46ch}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:72px}
+.tool{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s,border-color .2s}
+.tool:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(15,31,61,.12);border-color:var(--gold)}
+.shot{aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--line)}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top left}
+.body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.tag{align-self:flex-start;font:500 10.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--royal);background:var(--royal-soft);padding:5px 8px;border-radius:999px}
+.body h3{font:800 20px/1.1 var(--serif);letter-spacing:-.015em;margin:4px 0 0}
+.body p{margin:0;color:var(--navy-2);font-size:14px}
+.open{margin-top:auto;padding-top:6px;font-weight:600;font-size:13px;color:var(--royal)}
+footer{border-top:1px solid var(--line);padding:22px 0 40px;font:400 13px/1.4 var(--mono);color:var(--mute);text-align:center}
+@media (max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.grid{grid-template-columns:1fr}.wrap{padding:0 16px}header{padding:44px 0 28px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <img class="photo" src="img/basav.jpg" alt="Basav Sharma" width="800" height="800">
+  <h1>Basav Sharma<span>.</span></h1>
+  <a class="btn" href="https://www.linkedin.com/in/basavsharma/" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.6 4.77 6v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-3.95z"/></svg>LinkedIn</a>
+</header>
+
+<main class="wrap">
+  <div class="intro">
+    <div><div class="label">Portfolio</div><h2>Tools I've Built</h2></div>
+    <p>Rebuilt with sample data so you can try them. Click any tool to open it live.</p>
+  </div>
+  <div class="grid">
+    <a class="tool" href="fpa-dashboard.html">
+      <div class="shot"><img src="img/fpa.jpg" alt="FP&amp;A Dashboard preview" loading="lazy"></div>
+      <div class="body"><span class="tag">Finance</span><h3>FP&amp;A Dashboard</h3><p>"Are we on plan, and how long does our cash last?" Plan vs actuals, channel profit, runway and covenants, with what-ifs a CEO can change live.</p><span class="open">Open live →</span></div>
+    </a>
+    <a class="tool" href="cohort-unit-economics.html">
+      <div class="shot"><img src="img/cohort.jpg" alt="Cohort &amp; Unit Economics preview" loading="lazy"></div>
+      <div class="body"><span class="tag">Finance · GTM</span><h3>Cohort &amp; Unit Economics</h3><p>"Which marketing dollars should we scale, and which should we cut?" Joins ad spend, orders and costs to show CAC, payback and LTV by cohort and campaign.</p><span class="open">Open live →</span></div>
+    </a>
+    <a class="tool" href="gtm-planner.html">
+      <div class="shot"><img src="img/gtm.jpg" alt="GTM Capacity Planner preview" loading="lazy"></div>
+      <div class="body"><span class="tag">GTM</span><h3>GTM Capacity Planner</h3><p>"Can we hit the revenue target, and who do we need to hire?" Works back from the target to pipeline, reps and a hiring calendar.</p><span class="open">Open live →</span></div>
+    </a>
+    <a class="tool" href="inventory-open-to-buy.html">
+      <div class="shot"><img src="img/otb.jpg" alt="Inventory Open-to-Buy preview" loading="lazy"></div>
+      <div class="body"><span class="tag">Ops</span><h3>Inventory Open-to-Buy</h3><p>"What should we buy, and when?" For every product, channel and warehouse, so cash doesn't get stuck in slow stock.</p><span class="open">Open live →</span></div>
+    </a>
+    <a class="tool" href="po-tracker.html">
+      <div class="shot"><img src="img/po.jpg" alt="PO Tracker preview" loading="lazy"></div>
+      <div class="body"><span class="tag">Ops</span><h3>PO Tracker</h3><p>"Are we paying for what we actually received?" Matches every order to what arrived and what was billed, before it costs money.</p><span class="open">Open live →</span></div>
+    </a>
+    <a class="tool" href="recruitment-automation.html">
+      <div class="shot"><img src="img/recruit.jpg" alt="Recruitment Automation preview" loading="lazy"></div>
+      <div class="body"><span class="tag">Recruiting</span><h3>Recruitment Automation</h3><p>"Are we losing good candidates because we're slow?" Follows up on time, holds the sensitive ones for a person, and keeps notes on everyone.</p><span class="open">Open live →</span></div>
+    </a>
+    <a class="tool" href="fundraising-room.html">
+      <div class="shot"><img src="img/fundraise.jpg" alt="Fundraising Room preview" loading="lazy"></div>
+      <div class="body"><span class="tag">Fundraising</span><h3>Fundraising Room</h3><p>"Are we ready to raise, and at what valuation?" How I'd present a company to investors, with a valuation you can pressure-test.</p><span class="open">Open live →</span></div>
+    </a>
+  </div>
+</main>
+
+<footer>All company names, products and figures are anonymized or fictional.</footer>
+</body>
+</html>
