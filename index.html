@@ -17,10 +17,11 @@
 body{margin:0;background:var(--ivory);color:var(--navy);font:16px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-header{padding:64px 0 40px;text-align:center}
+header.wrap{padding-top:64px;padding-bottom:48px;text-align:center;display:flex;flex-direction:column;align-items:center}
 .photo{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:50% 25%;margin:0 auto 20px;box-shadow:0 0 0 4px var(--card),0 0 0 6px var(--gold)}
-h1{font:800 clamp(40px,6vw,64px)/1 var(--serif);letter-spacing:-.035em;margin:0 0 18px}
-h1 span{color:var(--gold)}
+h1{font:800 clamp(40px,6vw,64px)/1 var(--serif);letter-spacing:-.035em;margin:0 0 22px}
+h1{display:inline-block;position:relative}
+h1 span{color:var(--gold);position:absolute;left:100%;bottom:0}
 .btn{display:inline-flex;align-items:center;gap:9px;padding:12px 22px;border-radius:999px;font:600 15px/1 var(--sans);text-decoration:none;background:var(--li);color:#fff;transition:transform .15s,background .15s}
 .btn:hover{transform:translateY(-2px);background:#084e96}
 .btn svg{width:17px;height:17px}
@@ -40,7 +41,7 @@ h1 span{color:var(--gold)}
 .open{margin-top:auto;padding-top:6px;font-weight:600;font-size:13px;color:var(--royal)}
 footer{border-top:1px solid var(--line);padding:22px 0 40px;font:400 13px/1.4 var(--mono);color:var(--mute);text-align:center}
 @media (max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:620px){.grid{grid-template-columns:1fr}.wrap{padding:0 16px}header{padding:44px 0 28px}}
+@media (max-width:620px){.grid{grid-template-columns:1fr}.wrap{padding:0 16px}header.wrap{padding-top:44px;padding-bottom:36px}}
 </style>
 </head>
 <body>
